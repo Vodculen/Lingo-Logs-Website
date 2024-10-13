@@ -1,34 +1,92 @@
 * {
-    font-family: Helvetica;
+    --basicFont: 18px Helvetica;
+    --titleFont: 72px Helvetica;
+    --subtitleFont: 16px Helvetica;
+    --sectionFont: 36px Helvetica; 
+    --subsectionFont: 24px Helvetica;
+}
+
+::-webkit-scrollbar {width: 10px;}
+::-webkit-scrollbar-track {background: #00000000;}
+::-webkit-scrollbar-thumb {background: grey;}
+::-webkit-scrollbar-thumb:hover {background: lightgrey;}
+
+
+body {
+    margin: 0;
+}
+
+.head {
+    text-align: center;
+}
+
+.divider {
+    width: 97%;
 }
 
 .title {
-    font-size: 48px;
+    font: var(--titleFont);
+    letter-spacing: -2px;
+    margin-bottom: 0;
 }
 
 .subtitle {
-    font-size: 16px;
+    font: var(--basicFont);
 }
 
 .downloadButton {
-    background-color: lightgrey;
+    background-color: #ffffffff;
     padding: 10px 20px;
     border-radius: 15px;
-    border: none;
+    border: solid 2px lightgrey;
+    transition: all 0.5s;
+}
+
+.downloadButton:hover {
+    background-color: lightgrey;
+}
+
+.downloadButton:active {
+    border: solid 2px grey;
+    background-color: grey;
 }
 
 .section {
-    font-size: 2em;
+    font: var(--sectionFont);
+    letter-spacing: -2px;
+    margin-left: 50px;
 }
 
 .subsection {
-    font-size: 24px;
+    font: var(--subsectionFont);
 }
 
-.listings {
+.listingsContainer {
+    display: flex;
+}
+
+.leftSide, .rightSide {
     width: 50%;
+    margin-left: 50px;
 }
 
 .text {
-    font-size: 18px;
+    font: var(--basicFont);
+    margin-left: 50px;
+}
+
+.listingstext {
+    font: var(--basicFont);
+}
+
+.downloadsContainer {
+    width: 70%;
+    display: flex;
+}
+
+.windowsDownloads,
+.macDownloads,
+.linuxDownloads {
+    text-align: center;
+    margin: 0 20px;
 }
