@@ -1,0 +1,34 @@
+* {
+    font-family: Helvetica;
+}
+
+.title {
+    font-size: 48px;
+}
+
+.subtitle {
+    font-size: 16px;
+}
+
+.downloadButton {
+    background-color: lightgrey;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+}
+
+.section {
+    font-size: 2em;
+}
+
+.subsection {
+    font-size: 24px;
+}
+
+.listings {
+    width: 50%;
+}
+
+.text {
+    font-size: 18px;
+}
